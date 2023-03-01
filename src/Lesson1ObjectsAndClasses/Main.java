@@ -20,5 +20,8 @@ public class Main {
         System.out.println(warAndPeace);
         System.out.println(krimeAndPunishment);
         System.out.println(fathersAndSons);
-    }
+        System.out.println(warAndPeace.equals(krimeAndPunishment));
+        System.out.println(tolstoy.equals(dostoevski));
+       }
+
 }
