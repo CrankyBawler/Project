@@ -17,5 +17,8 @@ public class Main {
         krimeAndPunishment.setPublishingYear(1998);
         System.out.println(krimeAndPunishment.getBookName() + ", " + krimeAndPunishment.getAuthorName().getName() + " "
                 + krimeAndPunishment.getAuthorName().getFamiliaName() + ", " + krimeAndPunishment.getPublishingYear());
+        System.out.println(warAndPeace);
+        System.out.println(krimeAndPunishment);
+        System.out.println(fathersAndSons);
     }
 }

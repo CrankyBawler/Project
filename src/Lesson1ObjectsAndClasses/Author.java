@@ -8,6 +8,10 @@ public class Author {
         this.name = name;
         this.familiaName = familiaName;
     }
+    @Override
+    public String toString() {
+     return name + " " + familiaName;
+    }
 
     public String getName() {
         return this.name;

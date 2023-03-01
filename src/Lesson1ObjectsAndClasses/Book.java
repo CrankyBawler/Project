@@ -21,8 +21,12 @@ public class Book {
         public int getPublishingYear () {
         return this.publishingYear;
         }
-        public void setPublishingYear ( int publishingYear){
-            this.publishingYear = publishingYear;
+    public void setPublishingYear ( int publishingYear){
+        this.publishingYear = publishingYear;
         }
+    @Override
+    public String toString() {
+        return "Название книги " + bookName + " Имя автора " + authorName + " Год публикации " + publishingYear;
+    }
     }
 
