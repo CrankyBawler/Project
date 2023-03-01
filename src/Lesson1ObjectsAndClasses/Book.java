@@ -18,11 +18,31 @@ public class Book {
     public Author getAuthorName() {
         return this.authorName;
     }
-        public int getPublishingYear () {
+
+    public int getPublishingYear() {
         return this.publishingYear;
-        }
-        public void setPublishingYear ( int publishingYear){
-            this.publishingYear = publishingYear;
-        }
     }
+
+    public void setPublishingYear(int publishingYear) {
+        this.publishingYear = publishingYear;
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book c2 = (Book) other;
+        return bookName.equals(c2.bookName);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(bookName);
+    }
+
+    @Override
+    public String toString() {
+        return "Название книги " + bookName + " Имя автора " + authorName + " Год публикации " + publishingYear;
+    }
+}
 
